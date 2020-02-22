@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_Smoothie-ABL-Delta/templates *
+recursive-include octoprint_Smoothie-ABL-Delta/translations *
+recursive-include octoprint_Smoothie-ABL-Delta/static *
