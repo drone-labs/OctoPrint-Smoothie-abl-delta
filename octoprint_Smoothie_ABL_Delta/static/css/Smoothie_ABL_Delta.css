@@ -1,0 +1,92 @@
+
+
+/* Debug... */
+#tab_plugin_Smoothie_ABL_Delta .debug-red {
+  border: 2px solid red;
+}
+
+/* Warning Message on the tab header. See the JavaScript for Class Id */
+#tab_plugin_Smoothie_ABL_Delta .warn-msg {
+  text-align: center;
+  color: red;
+}
+
+/******************************************************************************
+ * A Simple Spinner
+ ******************************************************************************/
+/*#tab_plugin_Smoothie_ABL_Delta #CalSpinner {*/
+#tab_plugin_Smoothie_ABL_Delta .spin4cal {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  border: 60px solid black;
+  /*border-top: 60px solid #32cd32;*/
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+  animation: spin 5s linear infinite;
+  -webkit-animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+#tab_plugin_Smoothie_ABL_Delta .bed-bg-img {
+  /*margin: 5% auto;*/
+  /*text-align: center;*/
+  background-image: url('/plugin/Smoothie_ABL_Delta/static/img/uDelta_bed-001.png');
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: 50%;
+  background-size: contain;
+}
+/******************************************************************************
+ * Play with Animation (Source: developer.mozilla.org)
+ ******************************************************************************/
+/*
+@keyframes colorchange {
+  0% { background: yellow }
+  100% { background: blue }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.changing {
+  animation: colorchange 2s;
+}
+*/
+
+/******************************************************************************/
+/* How to stop an animation */
+/*
+.slidein {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+.stopped {
+  animation-name: none;
+}
+
+@keyframes slidein {
+  0% { margin-left: 0%; }
+  50% { margin-left: 50%; }
+  100% { margin-left: 0%; }
+}
+*/
+
+

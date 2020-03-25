@@ -4,7 +4,7 @@
 ### Do not forget to adjust the following variables to your own plugin.
 
 # The plugin's identifier, has to be unique
-plugin_identifier = "Smoothie-ABL-Delta"
+plugin_identifier = "Smoothie_ABL_Delta"
 
 # The plugin's python package, should be "octoprint_<plugin identifier>", has to be unique
 plugin_package = "octoprint_Smoothie_ABL_Delta"
@@ -24,7 +24,7 @@ plugin_description = """A simple OctoPrint plugin to ease µDelta Rework Calibra
 plugin_author = "drone-labs"
 
 # The plugin's author's mail address.
-plugin_author_email = "bruno.lelievre@free.fr"
+plugin_author_email = "contact@drone-labs.fr"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
 plugin_url = "https://github.com/drone-labs/OctoPrint-Smoothie-abl-delta"

@@ -1,0 +1,141 @@
+
+<!-- Plugin Tab View -->
+
+<div class="container-fluid">
+  <h3>A Simple Bed Level Calibration Helper for Smoothieware based Delta Printer</h3>
+  <p>Originaly written for a µDelta Rework from Emotion-Tech. The standard
+     touch probe is a mechanical switch</p>
+
+  <p class="warn-msg" data-bind="visible: !enableTest()"><b>Please, connect your printer!</b></p>
+  <p class="warn-msg" data-bind="visible: enableTest()"><b>Do not disconnect your printer!</b></p>
+</div>
+
+<!--oooooooooooooooooooooooooooooooo Debug oooooooooooooooooooooooooooooooooo-->
+  <button data-bind="click: SmTest" class="btn btn-warning">Debug...</button>
+<!--oooooooooooooooooooooooooooooooo Debug ooooooooooooooooooooooooooooooooo -->
+
+
+<!-- ooooooooooooooooooooo Bed Leveling Step 1 : Idle oooooooooooooooooooooo -->
+<div id="BedLevBody1" data-bind="visible: BedLevelingStep() == 1">
+  <h3>Step 1/4 : Probe Setup</h3>
+
+  <img src="/plugin/Smoothie_ABL_Delta/static/img/uDelta_Rework_View-002.png"
+       style="width: 400px; margin-left: 24px; margin-bottom: 12px"
+       alt="µDelta Sensor Setup">
+  <p>
+    As shown on the figure above, mount the sensor assembly on the print
+    head carrier and plug the 3.5mm jack to the printer body.
+    When ready, click Next to start calibration sequence.
+  </p>
+
+  <div class="container-fluid" style="text-align: right">
+    <!-- <button class="btn btn-warning" data-bind="click: DoStep1">{{ _('Cancel') }}</button> -->
+    <button class="btn btn-info" data-bind="click: DoStep2, enable: enableTest()">{{ _('Next') }}</button>
+  </div>
+  
+</div>
+<!-- ooooooooooooooooooooo Bed Leveling Step 1 : Idle oooooooooooooooooooooo -->
+
+<!-- ooooooooooooooo Bed Leveling Step 2 : Grid Calibration oooooooooooooooo -->
+<div id="BedLevBody2" data-bind="visible: BedLevelingStep() == 2">
+  <h3>Step 2/4 : Bed Level Calibration</h3>
+  <p class="caltext" align="center"><strong data-bind="text: CalStatus"></strong></p>
+
+  <!-- A simple radar style animation when calibration is in progress -->
+  <div class="container-fluid bed-bg-img">
+    <div class="spin4cal"></div>
+  </div>
+  <!-- Button block -->
+  <div class="container-fluid" style="text-align: right">
+    <button class="btn btn-warning" data-bind="click: CalStart">{{ _('Start') }}</button>
+    <button class="btn btn-success" data-bind="click: CalSave, enable: CalDone()">{{ _('Save') }}</button>
+    <button class="btn btn-info" data-bind="click: DoStep1">{{ _('Back') }}</button>
+    <button class="btn btn-info" data-bind="click: DoStep3">{{ _('Next') }}</button>
+  </div>
+
+</div>
+<!-- ooooooooooooooo Bed Leveling Step 2 : Grid Calibration oooooooooooooooo -->
+
+<!-- ooooooooooooooooooo Bed Leveling Step 3 : Cal Done oooooooooooooooooooo -->
+<div id="BedLevBody3" data-bind="visible: BedLevelingStep() == 3">
+  <!-- <p>Calibration done, ask to remove the probre and procced to Max Z Calibration</p> -->
+  <h3>Step 3/4 : Remove Probe</h3>
+
+  <img src="/plugin/Smoothie_ABL_Delta/static/img/uDelta_Rework_View-003.png"
+       style="width: 400px; margin-left: 24px; margin-bottom: 12px"
+       alt="µDelta Sensor Setup">
+  <p>
+    As shown on the figure above, unplug the 3.5mm jack from the printer body
+    and unmount the sensor assembly from the print head carrier.
+    Click Next when ready.
+  </p>
+  
+  <!-- Button block -->
+  <div class="container-fluid" style="text-align: right">
+    <!-- <button class="btn btn-warning" data-bind="click: DoStep3">{{ _('Cancel') }}</button> -->
+    <button class="btn btn-info" data-bind="click: DoStep2">{{ _('Back') }}</button>
+    <button class="btn btn-info" data-bind="click: DoStep4">{{ _('Next') }}</button>
+  </div>
+  
+</div>
+<!-- ooooooooooooooooooo Bed Leveling Step 3 : Cal Done oooooooooooooooooooo -->
+
+<!-- oooooooooooooooo Bed Leveling Step 4 : Max Z Setting oooooooooooooooooo -->
+<div id="BedLevBody4" data-bind="visible: BedLevelingStep() == 4">
+  <h3>Step 4/4 : Max Z Setting</h3>
+  
+  <!-- Jog Button block -->
+  <div class="row" style="margin-left: 12px">
+    <div class="column"
+         style="float: left; width: 12%; padding: 3%; text-align: center; border: 2px solid #C0C0C0; border-radius: 8px">
+      <a href="#" data-bind="click: LargeJogUp">
+        <img style="width:70%" src="plugin/Smoothie_ABL_Delta/static/img/Arrow-up.png" alt="Jog Up Coarse">
+      </a>
+      <a href="#" data-bind="click: SmallJogUp">
+        <img style="width:70%" src="plugin/Smoothie_ABL_Delta/static/img/Btn-up.png" alt="Jog Up Fine">
+      </a>
+      <a href="#" data-bind="click: SmallJogDn">
+        <img style="width:70%" src="plugin/Smoothie_ABL_Delta/static/img/Btn-dn.png" alt="Jog Down Fine">
+      </a>
+      <a href="#" data-bind="click: LargeJogDn">
+        <img style="width:70%" src="plugin/Smoothie_ABL_Delta/static/img/Arrow-dn.png" alt="Jog Down Coarse">
+      </a>
+    </div>  <!-- column -->
+  
+    <div class="column" style="float: left; margin-left: 8px; width: 75%; 2%">
+      <img src="/plugin/Smoothie_ABL_Delta/static/img/uDelta_Rework_MaxZ.png"
+           style="width: 200px; margin-left: 24px; margin-bottom: 12px"
+           alt="µDelta Max Z Setup">
+      <p style="margin-left: 12px">
+        Put a sheet of paper on the print bed, just beneath the nozzle. Check that Print Bed
+        has reached preset temperature, then use the left side controls to move the nozzle until
+        the paper sheet is sligthly stuck between the nozzle and the bed (units are mm).
+      </p>
+    </div>  <!-- column -->
+  </div>    <!-- row -->
+
+  <!-- Bed Heating Control Buttons -->
+  <p>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <!-- <label class="btn btn-danger active"> -->
+      <label class="btn btn-danger">
+        <!-- <input type="radio" name="optHeat" id="optHeatON" data-bind="click: TurnHeatON"> ON -->
+        <input type="radio" name="optHeat" id="optHeatON" > ON
+      </label>
+      <label class="btn btn-dark active">
+        <!-- <input type="radio" name="optHeat" id="optHeatOFF" data-bind="click: TurnHeatOFF" checked> OFF -->
+        <input type="radio" name="optHeat" id="optHeatOFF" checked> OFF
+      </label>
+    </div>
+    <b>Bed Heating</b>
+  </p>
+
+  <!-- Button block -->
+  <div class="container-fluid" style="text-align: right">
+    <button class="btn btn-primary"  data-bind="click: DoStep1">{{ _('Done') }}</button>
+    <button class="btn btn-success" data-bind="click: MaxZSave">{{ _('Save') }}</button>
+    <button class="btn btn-info" data-bind="click: DoStep3">{{ _('Back') }}</button>
+  </div>
+
+</div>
+<!-- oooooooooooooooo Bed Leveling Step 4 : Max Z Setting oooooooooooooooooo -->
