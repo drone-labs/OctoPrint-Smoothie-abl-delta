@@ -21,30 +21,24 @@ the plugin manager.
 
 <!-- html comment are not escaped... -->
 
-| ![Enter the Plugin](ScreenShots/ReachMe.png "Welcome") |
-| :--: |
-
+<!-- yes, not very pure markdown...  -->
 <p align="center">
   <img src="ScreenShots/ReachMe.png" alt="Enter the Plugin"/></p>
 
-<p align="center">This is a centered caption for the image</p>
+<p align="center">Entering the Plugin is done the standard way</p>
 
+| ![Step 1/4 : State = Idle](ScreenShots/Step1.png) |
+:-:
+toto |
 
-
-
-![Enter the Plugin](ScreenShots/ReachMe.png "Welcome")
-
-
-A 2-cell LIPO Battery can be used to power the Board. The Battery balancing plug has
-to be plugged into the JST-XH **LIPO** header. **Check this point before buying**
-(Connector type and wiring diagram).
-Charging logic and protections are handled by the hardware. Monitoring the status Leds
-(BATT_LED_1 to BATT_LED_4) has to be done by software. Below is a simplified diagram
-of the BeagleBone Blue power distribution circuit (USB not shown):
 ![Step 1/4 : State = Idle](ScreenShots/Step1.png)
 
 ![Step 2/4 : Ready to Start Bed Level Calibration](ScreenShots/Step2a.png)
+
 ![Step 2/4 : Bed Level Calibration in Progress](ScreenShots/Step2b.png)
+
 ![Step 2/4 : Bed Level Calibration Done](ScreenShots/Step2c.png)
+
 ![Step 3/4 : Exit Level Calibration](ScreenShots/Step3.png)
+
 ![Step 4/4 : Max Z Setting](ScreenShots/Step4.png)
