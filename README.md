@@ -22,24 +22,39 @@ the plugin manager.
 <!-- html comment are not escaped... -->
 
 <!-- yes, not very pure markdown...  -->
+<!-- Plugin invocation -->
+<p align="center">Entering the Plugin is done the standard way</p>
 <p align="center">
   <img src="ScreenShots/ReachMe.png" alt="Enter the Plugin"/></p>
 
+<!-- Step 1/4 -->
+<p align="center">Before proceeding, the user is asked to mount the
+   Probe assembly (supplied with the kit) on the Printer</p>
+<p align="center">
+  <img src="ScreenShots/Step1.png" alt="Step1"/></p>
+
+<!-- Step 2a/4 -->
 <p align="center">Entering the Plugin is done the standard way</p>
+<p align="center">
+  <img src="ScreenShots/Step2a.png" alt="Step2a"/></p>
 
-| Smart |
-:-:
-| ![Step 1/4 : State = Idle](ScreenShots/Step1.png) |
+<!-- Step 2b/4 -->
+<p align="center">Entering the Plugin is done the standard way</p>
+<p align="center">
+  <img src="ScreenShots/Step2b.png" alt="Step2b"/></p>
 
+<!-- Step 2c/4 -->
+<p align="center">Entering the Plugin is done the standard way</p>
+<p align="center">
+  <img src="ScreenShots/Step2c.png" alt="Step2c"/></p>
 
-![Step 1/4 : State = Idle](ScreenShots/Step1.png)
+<!-- Step 3/4 -->
+<p align="center">Entering the Plugin is done the standard way</p>
+<p align="center">
+  <img src="ScreenShots/Step3.png" alt="Step3"/></p>
 
-![Step 2/4 : Ready to Start Bed Level Calibration](ScreenShots/Step2a.png)
+<!-- Step 4/4 -->
+<p align="center">Entering the Plugin is done the standard way</p>
+<p align="center">
+  <img src="ScreenShots/Step4.png" alt="Step4"/></p>
 
-![Step 2/4 : Bed Level Calibration in Progress](ScreenShots/Step2b.png)
-
-![Step 2/4 : Bed Level Calibration Done](ScreenShots/Step2c.png)
-
-![Step 3/4 : Exit Level Calibration](ScreenShots/Step3.png)
-
-![Step 4/4 : Max Z Setting](ScreenShots/Step4.png)
