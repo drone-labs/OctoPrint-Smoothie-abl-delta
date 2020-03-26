@@ -27,9 +27,10 @@ the plugin manager.
 
 <p align="center">Entering the Plugin is done the standard way</p>
 
-| ![Step 1/4 : State = Idle](ScreenShots/Step1.png) |
+| Smart |
 :-:
-toto |
+| ![Step 1/4 : State = Idle](ScreenShots/Step1.png) |
+
 
 ![Step 1/4 : State = Idle](ScreenShots/Step1.png)
 
