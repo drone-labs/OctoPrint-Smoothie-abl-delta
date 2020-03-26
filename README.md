@@ -20,8 +20,15 @@ the plugin manager.
 ## Usage
 
 
+| ![Enter the Plugin](ScreenShots/ReachMe.png "Welcome") |
+| :--: |
+
+->![Enter the Plugin](ScreenShots/ReachMe.png "Welcome")<-
+
+
+
 ![Enter the Plugin](ScreenShots/ReachMe.png "Welcome")
-**Reach Me**
+
 
 A 2-cell LIPO Battery can be used to power the Board. The Battery balancing plug has
 to be plugged into the JST-XH **LIPO** header. **Check this point before buying**
