@@ -1,8 +1,7 @@
 # OctoPrint-Smoothie-abl-delta
-
-### A simple OctoPrint plugin to ease µDelta Rework Calibration.
-### It will handle Bed Level grid Calibration and Max Z settings
-### (almost) automatically. 
+## A simple OctoPrint plugin to ease µDelta Rework Calibration.
+It will handle Bed Level grid Calibration and Max Z settings \
+(almost) automatically. 
 
 ## Setup
 
@@ -20,7 +19,7 @@ the plugin manager.
 
 ## Usage
 
-![Enter the Plugin](ScreenShots/ReachMe.png)
+![Enter the Plugin](ScreenShots/ReachMe.png "Welcome")
 ![Step 1/4 : State = Idle](ScreenShots/Step1.png)
 ![Step 2/4 : Ready to Start Bed Level Calibration](ScreenShots/Step2a.png)
 ![Step 2/4 : Bed Level Calibration in Progress](ScreenShots/Step2b.png)
