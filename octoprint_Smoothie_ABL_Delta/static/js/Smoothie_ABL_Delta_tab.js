@@ -294,13 +294,13 @@ $(function() {
       console.log("   Saving Max Z...");
 
       // Play with regex...
-      var str = "ok X:0 Y:0 Z:-100.03 E:0 Count: A:0 B:0 C:0";
-      //var patt = /Z:/i; /^A/
-      //var patt = /Z:\d*.\d*/;
-      // var str = "April ( 123 widgets less 456 sprockets )";
-      // var patt = ^\s*(\w+)\s*\(\s*(\d+)\D+(\d+)\D+\)\s*$;
-      //substr = ok,X:0,Y:0,Z:100.03,E:0,Count:,A:0,B:0,C:0
-      var Zstr = str.split(" ")[3].substr(2);
+      var str1 = "ok X:0 Y:0 Z:-100.3200998777 E:0 Count: A:0 B:0 C:0";
+
+      //var patt = /\bZ:[-\d.]\d*[.\d]\d*/;
+      //var searchResult = str1.match(patt);
+      //console.log("   Matching string : " + searchResult );
+      
+      var Zstr = str1.split(" ")[3].substr(2);
 
       //var splitstr = str.split(" ");
       //console.log("   splitstr = " + splitstr);
@@ -323,6 +323,10 @@ $(function() {
     self.DoStep1 = function () {
       // Return to step 1 : Iddle
       self.BedLevelingStep(1);
+      //OctoPrint.control.sendGcode("G4 S5").done(function () {
+      //  console.log("   Dwelled for 5s" );
+      //});
+
     }; // END self.DoStep1()
 
    /***************************************************************************
