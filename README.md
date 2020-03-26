@@ -80,7 +80,11 @@ the plugin manager.
 <!-- Step 4/4 -->
 <p align="center">
   When the Probe Assembly has been removed, a click on the <b>Next</b> button
-  leads to the Max Z Setting Page.</p>
+  leads to the Max Z Setting Page. Before proceeding to any height adjustment,
+  make sure that Bed Heating is <b>ON</b> and Bed Temperature is at least 70°C.
+  Follow the given instructions to reach the correct Height. When done, a click
+  on the <b>Save</b> button will update the setting on the SD Card. Bed Heating
+  can then be turned <b>OFF</b>. </p>
 
 <p align="center">
   <img src="ScreenShots/Step4.png" alt="Step4"/></p>
