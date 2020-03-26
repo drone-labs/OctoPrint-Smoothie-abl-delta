@@ -19,11 +19,16 @@ the plugin manager.
 
 ## Usage
 
+<!-- html comment are not escaped... -->
 
 | ![Enter the Plugin](ScreenShots/ReachMe.png "Welcome") |
 | :--: |
 
-->![Enter the Plugin](ScreenShots/ReachMe.png "Welcome")<-
+<p align="center">
+  <img src="ScreenShots/ReachMe.png" alt="Enter the Plugin"/></p>
+
+<p align="center">This is a centered caption for the image</p>
+
 
 
 
