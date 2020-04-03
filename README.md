@@ -16,46 +16,8 @@ For now, Install manually using this URL:
 
 ## Configuration
 
-#### Emergency Stop
+![Configuration](Images/settings.png)
 
-- **emergencyGcode**
-
-    Define the GCODE to send when the button is pressed.
-    Default = "M112"
-    
-- **confirmationDialog**
-
-    Show confirmation dialog?
-    Default = Yes
-
-#### Bed Level Calibration
-
-- **Gcode Sequence**
-
-    List of Gcode lines to send, separated by  a '\n' character.
-    Default = "G28\nG32\nG31"
-
-- **Save Gcode**
-
-    Gcode Command used to save Grid Data on the SD Card.
-    Default = "M374"
-
-- **TimeOut**
-
-    Time (in seconds) Allocated to the process before a TimeOut error is triggered.
-    Default = 200
-
-#### Max Z setting
-
-- **Bed Temperature**
-
-    Print Bed Temperature set point (in °C).
-    Default = 70
-
-- **Save Gcode Sequence**
-
-    List of Gcode lines to send, separated by  a '\n' character.
-    Default = "M306 Z0\nM500"
 
 ## Usage
 
