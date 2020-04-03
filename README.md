@@ -5,7 +5,8 @@ Also included is an Emergency Stop Feature largely inspired by the work of Séba
 Clément. 
 
 ## Credits
-https://github.com/Sebclem/OctoPrint-SimpleEmergencyStop 
+https://github.com/Sebclem/OctoPrint-SimpleEmergencyStop
+
 https://github.com/scottrini/OctoPrint-PrusaLevelingguide
 
 ## Setup
